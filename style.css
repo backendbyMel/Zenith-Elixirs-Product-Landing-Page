@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #06B6D4;
+  --color-neutral-900: #0F172A; /* darkest text */
+  --color-neutral-100: #F8FAFC; /* lightest bg */
+  --color-accent: #F59E0B;
+  --base-font-size: 1rem;
+  --ratio: 1.25;   
+  /* Step 2: Calculate downward steps (smaller than body) */
+  --step-down-1: calc(var(--base-font-size) / var(--ratio)); /* ~0.8rem */
+
+  /* Step 3: Calculate upward steps (headings) */
+  --step-0: var(--base-font-size);                           /* 1rem */
+  --step-1: calc(var(--step-0) * var(--ratio));              /* 1.25rem */
+  --step-2: calc(var(--step-1) * var(--ratio));              /* 1.563rem */
+  --step-3: calc(var(--step-2) * var(--ratio));              /* 1.953rem */
+  --step-4: calc(var(--step-3) * var(--ratio));              /* 2.441rem */
+}
